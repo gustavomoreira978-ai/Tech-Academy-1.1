@@ -4,92 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samurai Quest</title>
-    <link rel="shortcut icon" href="imagens/logo.png">
+
+    <link rel="shortcut icon" href="imagens/logo.png" type="image/png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sekuya&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css"  href="css/style.css">
-    <link rel="stylesheet" type="text/css"  href="css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Sekuya&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <style>
+        main {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        h1, h2 {
+            margin-top: 20px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+    </style>
 </head>
 
 <body>
     <header>
-      
-        <a href="javascript:mostrarmenu()" class="menu">
-            <i class="fas fa-barns"></i>
+        <a href="#" class="menu" title="Abrir menu" onclick="mostrarMenu(event)">
+            <i class="fas fa-bars"></i>
         </a>
+
         <nav>
             <ul>
-                <li>
-                    <a href="index.html" title="Home">
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <a href="galeria.html" title="Galeria">
-                        Galeria
-                    </a>
-                </li>
-                <li>
-                    <a href="historia.html" title="história">
-                    História
-                    </a>
-
-                </li>
-                 <li>
-                    <a href="jogo.html" tile="Jogar">
-                        Jogar
-                    </a>
-                </li>
-
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="galeria.html" title="Galeria">Galeria</a></li>
+                <li><a href="historia.html" title="História">História</a></li>
+                <li><a href="jogo.html" title="Jogar">Jogar</a></li>
             </ul>
         </nav>
     </header>
-    <div class="banner">
-        <img src="imagens/logo.png" alt="banner" title="banner">
-    </div>
+
+    <section class="banner">
+        <img src="imagens/logo.png" alt="Logo do jogo Samurai Quest" title="Samurai Quest">
+    </section>
+
     <main>
         <h1>Uma aventura Samurai</h1>
-        <p1>Em um Japão antigo esquecido pelo tempo, existia um reino próspero chamado Kurohana, onde a paz reinava entre humanos e espíritos.
 
-Mas tudo mudou quando surgiu o temido Rei Porco.
+        <p>
+            Em um Japão antigo esquecido pelo tempo, existia um reino próspero chamado Kurohana, onde a paz reinava entre humanos e espíritos.
+        </p>
 
-Antigamente, ele era apenas um guardião das florestas… até ser corrompido por uma energia sombria que brotava das profundezas da terra. Seu corpo cresceu, sua mente se perdeu, e sua fome por poder transformou animais em tropas monstruosas — javalis guerreiros, arqueiros selvagens e bestas gigantes.
+        <p>
+            Mas tudo mudou quando surgiu o temido Rei Porco.
+        </p>
 
-As vilas foram destruídas. Templos caíram. O mundo entrou em caos
-        </p1>
-        <h2>O ÚLTIMO SAMURAI</h2>
-        <p2>No meio da destruição, surge você.
+        <p>
+            Antigamente, ele era apenas um guardião das florestas… até ser corrompido por uma energia sombria que brotava das profundezas da terra. Seu corpo cresceu, sua mente se perdeu, e sua fome por poder transformou animais em tropas monstruosas — javalis guerreiros, arqueiros selvagens e bestas gigantes.
+        </p>
 
-Um samurai solitário, último discípulo de um clã esquecido.
-Seu mestre, antes de morrer, disse:
+        <p>
+            As vilas foram destruídas. Templos caíram. O mundo entrou em caos.
+        </p>
 
-"Quando o equilíbrio for quebrado… corte a escuridão pela raiz."
+        <h2>O Último Samurai</h2>
 
-Armado apenas com sua katana e determinação, você parte em uma jornada para derrotar o Rei Porco.</p2>
+        <p>
+            No meio da destruição, surge você.
+        </p>
 
+        <p>
+            Um samurai solitário, último discípulo de um clã esquecido. Seu mestre, antes de morrer, disse:
+        </p>
+
+        <p>
+            <strong>"Quando o equilíbrio for quebrado… corte a escuridão pela raiz."</strong>
+        </p>
+
+        <p>
+            Armado apenas com sua katana e determinação, você parte em uma jornada para derrotar o Rei Porco.
+        </p>
     </main>
-    <footer>
 
+    <footer>
         <p>Todos os direitos reservados</p>
-        <p>
-            <a href="https://instagram.com" title="Instagram">
-                <i class="fab fa-instagram"></i>
-            </a>
-        </p>
-        <p>
-            <a href="https://youtube.com" title="Youtube">
-                <i class="fab fa-youtube"></i>
-            </a>
-        </p>
-        <p>
-            <a href="https://twitter.com" title="Twitter">
-                <i class="fab fa-twitter"></i>
-            </a>
-        </p>
+
+        <ul class="redes-sociais">
+            <li>
+                <a href="https://instagram.com" title="Instagram" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://youtube.com" title="YouTube" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://twitter.com" title="Twitter" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+        </ul>
     </footer>
+
     <script>
-        function mostrarmenu() {
+        function mostrarMenu(event) {
+            event.preventDefault();
             document.querySelector("header nav").classList.toggle("block");
         }
     </script>
