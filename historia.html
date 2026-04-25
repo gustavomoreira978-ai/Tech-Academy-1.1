@@ -4,99 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samurai Quest</title>
-    <link rel="shortcut icon" href="imagens/logo.png">
+
+    <link rel="shortcut icon" href="imagens/logo.png" type="image/png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sekuya&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css"  href="css/style.css">
-    <link rel="stylesheet" type="text/css"  href="css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Sekuya&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
 </head>
 
 <body>
     <header>
-      
-        <a href="javascript:mostrarmenu()" class="menu">
-            <i class="fas fa-barns"></i>
+        <a href="#" class="menu" title="Abrir menu" onclick="mostrarMenu(event)">
+            <i class="fas fa-bars"></i>
         </a>
+
         <nav>
             <ul>
-                <li>
-                    <a href="index.html" title="Home">
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <a href="galeria.html" title="Galeria">
-                        Galeria
-                    </a>
-                </li>
-                <li>
-                    <a href="historia.html" title="história">
-                    História
-                    </a>
-
-                </li>
-                 <li>
-                    <a href="jogo.html" tile="Jogar">
-                        Jogar
-                    </a>
-                </li>
-
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="galeria.html" title="Galeria">Galeria</a></li>
+                <li><a href="historia.html" title="História">História</a></li>
+                <li><a href="jogo.html" title="Jogar">Jogar</a></li>
             </ul>
         </nav>
     </header>
-    <div class="banner">
-        <img src="imagens/logo.png" alt="banner" title="banner">
-    </div>
+
+    <section class="banner">
+        <img src="imagens/logo.png" alt="Logo do jogo Samurai Quest" title="Samurai Quest">
+    </section>
+
     <main>
-        <h1>História</h1>
-        <p1>Kurohana já foi um reino de equilíbrio, onde humanos, animais e espíritos coexistiam sob um antigo juramento: nenhum poder deveria dominar o outro. Mas esse juramento foi quebrado quando, nas profundezas da terra, algo despertou. Uma energia antiga, conhecida apenas como Raiz Negra, começou a se espalhar. Ela não destruía, ela corrompia. E o primeiro a cair foi o guardião da floresta. O que antes era um espírito nobre transformou-se no temido Rei Porco. Sua mente se perdeu, seu corpo se deformou e sua vontade virou domínio. Sob sua influência, animais foram transformados em tropas monstruosas: javalis guerreiros, bestas selvagens e criaturas que antes protegiam a natureza passaram a espalhar destruição. Em poucos meses, Kurohana caiu.
+        <section class="historia">
+            <h1>História</h1>
 
-Muito longe dali, em um templo esquecido, um jovem samurai treinava. Ele não tinha nome, nem clã, nem passado. Era conhecido apenas como o Último Samurai. Antes de morrer, seu mestre deixou uma única mensagem: a Raiz Negra não pode ser destruída, apenas contida. Como último ato, entregou-lhe uma katana chamada Kurogane, uma lâmina capaz de cortar a corrupção. Sem exército, sem aliados e sem destino certo, o samurai partiu sozinho.
+            <p>
+                Kurohana já foi um reino de equilíbrio, onde humanos, animais e espíritos coexistiam sob um antigo juramento: nenhum poder deveria dominar o outro. Mas esse juramento foi quebrado quando, nas profundezas da terra, algo despertou. Uma energia antiga, conhecida apenas como Raiz Negra, começou a se espalhar. Ela não destruía, ela corrompia. E o primeiro a cair foi o guardião da floresta.
+            </p>
 
-Sua jornada começou pelas florestas corrompidas, onde percebeu que seus inimigos não eram monstros por escolha, mas vítimas da mesma força que destruíra o reino. Cada golpe que desferia era uma luta não apenas física, mas também moral. Ao avançar, encontrou templos abandonados, onde registros antigos revelavam uma verdade inquietante: a Raiz Negra já havia surgido antes e sempre retornava. Não era um evento isolado, mas um ciclo.
+            <p>
+                O que antes era um espírito nobre transformou-se no temido Rei Porco. Sua mente se perdeu, seu corpo se deformou e sua vontade virou domínio. Sob sua influência, animais foram transformados em tropas monstruosas: javalis guerreiros, bestas selvagens e criaturas que antes protegiam a natureza passaram a espalhar destruição. Em poucos meses, Kurohana caiu.
+            </p>
 
-No caminho até o castelo do Rei Porco, o samurai enfrentou três generais poderosos. O primeiro, conhecido como Devorador, era pura força bruta. O segundo, a Presa Sombria, lutava com velocidade e veneno. O terceiro, o Vigia Cego, combatia guiado apenas por instinto. Cada batalha o tornava mais forte, mas também o aproximava de uma verdade perturbadora: a Raiz Negra não escolhe os fracos, ela escolhe os fortes.
+            <p>
+                Muito longe dali, em um templo esquecido, um jovem samurai treinava. Ele não tinha nome, nem clã, nem passado. Era conhecido apenas como o Último Samurai. Antes de morrer, seu mestre deixou uma única mensagem: a Raiz Negra não pode ser destruída, apenas contida. Como último ato, entregou-lhe uma katana chamada Kurogane, uma lâmina capaz de cortar a corrupção. Sem exército, sem aliados e sem destino certo, o samurai partiu sozinho.
+            </p>
 
-Ao alcançar o castelo no topo da montanha, o mundo parecia respirar corrupção. O ar era pesado e o chão pulsava como se estivesse vivo. O samurai entrou sozinho, sem hesitação. No salão do trono, encontrou o Rei Porco. Gigante, deformado, mas ainda consciente. Antes da luta começar, o rei falou: ele também havia resistido o quanto pôde.
+            <p>
+                Sua jornada começou pelas florestas corrompidas, onde percebeu que seus inimigos não eram monstros por escolha, mas vítimas da mesma força que destruíra o reino. Cada golpe que desferia era uma luta não apenas física, mas também moral. Ao avançar, encontrou templos abandonados, onde registros antigos revelavam uma verdade inquietante: a Raiz Negra já havia surgido antes e sempre retornava. Não era um evento isolado, mas um ciclo.
+            </p>
 
-A batalha foi intensa. Disciplina contra caos, lâmina contra força bruta. No golpe final, o silêncio tomou conta do salão. O Rei Porco caiu e, com sua queda, a corrupção começou a desaparecer. O mundo parecia, enfim, em paz. O samurai permaneceu ali, respirando, acreditando que havia vencido.
+            <p>
+                No caminho até o castelo do Rei Porco, o samurai enfrentou três generais poderosos. O primeiro, conhecido como Devorador, era pura força bruta. O segundo, a Presa Sombria, lutava com velocidade e veneno. O terceiro, o Vigia Cego, combatia guiado apenas por instinto. Cada batalha o tornava mais forte, mas também o aproximava de uma verdade perturbadora: a Raiz Negra não escolhe os fracos, ela escolhe os fortes.
+            </p>
 
-Mas então ele sentiu.
+            <p>
+                Ao alcançar o castelo no topo da montanha, o mundo parecia respirar corrupção. O ar era pesado e o chão pulsava como se estivesse vivo. O samurai entrou sozinho, sem hesitação. No salão do trono, encontrou o Rei Porco. Gigante, deformado, mas ainda consciente. Antes da luta começar, o rei falou: ele também havia resistido o quanto pôde.
+            </p>
 
-A Raiz Negra ainda existia. Não no mundo ao seu redor, mas dentro dele. Pequena, quase imperceptível, mas viva. A espada começou a tremer em sua mão, e seus olhos lentamente passaram a brilhar. Nesse momento, ele entendeu. A Raiz Negra não podia ser destruída. Apenas contida. E alguém sempre precisaria carregá-la.
+            <p>
+                A batalha foi intensa. Disciplina contra caos, lâmina contra força bruta. No golpe final, o silêncio tomou conta do salão. O Rei Porco caiu e, com sua queda, a corrupção começou a desaparecer. O mundo parecia, enfim, em paz. O samurai permaneceu ali, respirando, acreditando que havia vencido.
+            </p>
 
-Ele fincou a espada no chão e se levantou lentamente. Sem dizer uma palavra, começou a caminhar. Na mesma direção que o Rei Porco havia seguido um dia. A história não havia terminado. Ela apenas recomeçava.
+            <p>
+                Mas então ele sentiu. A Raiz Negra ainda existia. Não no mundo ao seu redor, mas dentro dele. Pequena, quase imperceptível, mas viva. A espada começou a tremer em sua mão, e seus olhos lentamente passaram a brilhar. Nesse momento, ele entendeu. A Raiz Negra não podia ser destruída. Apenas contida. E alguém sempre precisaria carregá-la.
+            </p>
 
-Agora, ele não era mais apenas um samurai.
+            <p>
+                Ele fincou a espada no chão e se levantou lentamente. Sem dizer uma palavra, começou a caminhar. Na mesma direção que o Rei Porco havia seguido um dia. A história não havia terminado. Ela apenas recomeçava.
+            </p>
 
-Ele era o próximo portador.
-
-E, em algum lugar, um novo guerreiro começava a surgir.
-        </p1>
-
+            <p>
+                Agora, ele não era mais apenas um samurai. Ele era o próximo portador. E, em algum lugar, um novo guerreiro começava a surgir.
+            </p>
+        </section>
     </main>
+
     <footer>
         <p>Todos os direitos reservados</p>
-        <p>
-            <a href="https://instagram.com" title="Instagram">
-                <i class="fab fa-instagram"></i>
-            </a>
-        </p>
-        <p>
-            <a href="https://youtube.com" title="Youtube">
-                <i class="fab fa-youtube"></i>
-            </a>
-        </p>
-        <p>
-            <a href="https://twitter.com" title="Twitter">
-                <i class="fab fa-twitter"></i>
-            </a>
-        </p>
+
+        <ul class="redes-sociais">
+            <li>
+                <a href="https://instagram.com" title="Instagram" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://youtube.com" title="YouTube" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com" title="Twitter" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+        </ul>
     </footer>
+
     <script>
-        function mostrarmenu() {
-            document.querySelector("header nav").classList.toggle("block");
+        function mostrarMenu(event) {
+            event.preventDefault();
+            const menu = document.querySelector("header nav");
+            menu.classList.toggle("block");
         }
     </script>
 </body>
