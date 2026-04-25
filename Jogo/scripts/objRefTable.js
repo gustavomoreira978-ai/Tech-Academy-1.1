@@ -87,6 +87,7 @@ self.C3_JsPropNameTable = [
 	{ChatGPTImage19_04_202620_55_: 0},
 	{Sprite19: 0},
 	{Botão: 0},
+	{Botão2: 0},
 	{Variável1: 0}
 ];
 
@@ -123,5 +124,6 @@ self.InstanceType = {
 	Mouse: class extends self.IInstance {},
 	ChatGPTImage19_04_202620_55_: class extends self.ISpriteInstance {},
 	Sprite19: class extends self.ISpriteInstance {},
-	Botão: class extends self.IButtonInstance {}
+	Botão: class extends self.IButtonInstance {},
+	Botão2: class extends self.IButtonInstance {}
 }
