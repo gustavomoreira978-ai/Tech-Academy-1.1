@@ -3,93 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samurai Quest</title>
-    <link rel="shortcut icon" href="imagens/logo.png">
+    <title>Galeria - Samurai Quest</title>
+
+    <link rel="shortcut icon" href="imagens/logo.png" type="image/png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sekuya&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css"  href="css/style.css">
-    <link rel="stylesheet" type="text/css"  href="css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Sekuya&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+<style>
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .coluna {
+        text-align: center;
+    }
+
+    .coluna img {
+        width: 100%;
+        height: 250px; /* força todas do mesmo tamanho */
+        object-fit: cover; /* mantém proporção sem distorcer */
+        border-radius: 10px;
+    }
+</style>
 </head>
 
 <body>
     <header>
-      
-        <a href="javascript:mostrarmenu()" class="menu">
-            <i class="fas fa-barns"></i>
+        <a href="#" class="menu" title="Abrir menu" onclick="mostrarMenu(event)">
+            <i class="fas fa-bars"></i>
         </a>
+
         <nav>
             <ul>
-                <li>
-                    <a href="index.html" title="Home">
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <a href="galeria.html" title="Galeria">
-                        Galeria
-                    </a>
-                </li>
-                <li>
-                    <a href="historia.html" title="história">
-                    História
-                    </a>
-
-                </li>
-                 <li>
-                    <a href="jogo.html" tile="Jogar">
-                        Jogar
-                    </a>
-                </li>
-
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="galeria.html" title="Galeria">Galeria</a></li>
+                <li><a href="historia.html" title="História">História</a></li>
+                <li><a href="jogo.html" title="Jogar">Jogar</a></li>
             </ul>
         </nav>
     </header>
-    <div class="banner">
-        <img src="imagens/logo.png" alt="banner" title="banner">
-    </div>
+
+    <section class="banner">
+        <img src="imagens/logo.png" alt="Logo do jogo Samurai Quest" title="Samurai Quest">
+    </section>
+
     <main>
         <h1>Galeria</h1>
-                <div class="grid">
-            <div class="coluna">
-                <img src="imagens/1.jpg" alt="Carro 1" title="Carro 1">
-                <p> Samurai</p>
-            </div>
-            <div class="coluna">
-                <img src="imagens/2.jpg" alt="Carro 2" title="Carro 2">
-                <p> inimigos</p>
-                
-                </p>
-            </div>
-            <div class="coluna">
-                <img src="imagens/3.jpg" alt="Carro 3" title="Carro 3">
-                <p> Rei porco</p>
-               
-            </div>
 
-        </div>
+        <section class="grid" aria-label="Galeria de personagens do jogo">
+            <article class="coluna">
+                <img src="imagens/1.jpg" alt="Imagem do samurai protagonista" title="Samurai">
+                <p>Samurai</p>
+            </article>
+
+            <article class="coluna">
+                <img src="imagens/2.jpg" alt="Imagem dos inimigos do jogo" title="Inimigos">
+                <p>Inimigos</p>
+            </article>
+
+            <article class="coluna">
+                <img src="imagens/3.jpg" alt="Imagem do Rei Porco" title="Rei Porco">
+                <p>Rei Porco</p>
+            </article>
+        </section>
     </main>
+
     <footer>
         <p>Todos os direitos reservados</p>
-        <p>
-            <a href="https://instagram.com" title="Instagram">
-                <i class="fab fa-instagram"></i>
-            </a>
-        </p>
-        <p>
-            <a href="https://youtube.com" title="Youtube">
-                <i class="fab fa-youtube"></i>
-            </a>
-        </p>
-        <p>
-            <a href="https://twitter.com" title="Twitter">
-                <i class="fab fa-twitter"></i>
-            </a>
-        </p>
+
+        <ul class="redes-sociais">
+            <li>
+                <a href="https://instagram.com" title="Instagram" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://youtube.com" title="YouTube" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://twitter.com" title="Twitter" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+        </ul>
     </footer>
+
     <script>
-        function mostrarmenu() {
-            document.querySelector("header nav").classList.toggle("block");
+        function mostrarMenu(event) {
+            event.preventDefault();
+            const menu = document.querySelector("header nav");
+            menu.classList.toggle("block");
         }
     </script>
 </body>
